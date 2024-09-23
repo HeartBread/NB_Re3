@@ -1,4 +1,4 @@
-# stack and crop images into timeseries with fixed size
+# generate npy data
 import time
 import sys
 import numpy as np
@@ -12,8 +12,8 @@ sys.path.append('/data/newhome/hongtao/Pyproject/Reflectance_Reconstruction')
 t1 = time.perf_counter()
 
 # ******************************************************************************************************
-study_area = 'Mangkang'
-data_directory = '/data/newhome/hongtao/Mangkang_Changdu'
+study_area = 'Area_1'
+data_directory = '/data/newhome/hongtao/Area_1'
 raw_directory = data_directory + '/raw_image'
 mask_directory = data_directory + '/image_mask'
 img_directory = data_directory + '/image_data'
@@ -22,7 +22,7 @@ output_directory = data_directory + '/npy_data'
 ################################
 
 m, n = 3, 2  # height, width
-idx = 5
+idx = 0
 
 block_size = 3
 is_train = False
