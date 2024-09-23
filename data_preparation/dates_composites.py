@@ -1,8 +1,6 @@
 # composite unequally time-intervals timeseries into equally time-intervals timeseries
 # (scale of original time series contains scale of synthetic time series)
 
-import sys
-sys.path.append('/data/newhome/hongtao/Pyproject/Reflectance_Reconstruction')
 
 import time
 import numpy as np
@@ -14,9 +12,9 @@ import os
 
 t1 = time.perf_counter()
 
-output_directory = ndvi_directory = '/data/newhome/hongtao/Mangkang_Changdu/image_data'
+output_directory = ndvi_directory = '/data/newhome/hongtao/Area_1/image_data'
 # ******************************************************************************************************
-width, height, _, _, proj, trans, ndvi_image, _ = read_images(ndvi_directory + '/Mangkang_Changdu_GFSG_2022.tif')
+width, height, _, _, proj, trans, ndvi_image, _ = read_images(ndvi_directory + '/Area_1_GFSG_2022.tif')
 origin_dates = open(ndvi_directory + '/coarse_timeseries.txt')
 composite_dates = open(ndvi_directory + '/fine_timeseries.txt')
 # ******************************************************************************************************
