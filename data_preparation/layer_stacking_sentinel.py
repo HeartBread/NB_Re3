@@ -6,13 +6,11 @@ from tqdm import tqdm
 import gc
 from support.utils import filelist_filter, read_images, arr2raster
 
-sys.path.append('/data/newhome/hongtao/Pyproject/Reflectance_Reconstruction')
-
 t1 = time.perf_counter()
 
 # ******************************************************************************************************
-study_area = 'Naidong'
-data_directory = '/data/newhome/hongtao' + '/Naidong_Shannan'
+study_area = 'Area_1'
+data_directory = '/data/newhome/hongtao' + '/Area_1'
 img_directory = data_directory + '/raw_image'
 mask_directory = data_directory + '/image_mask'
 output_directory = data_directory + '/image_data'
