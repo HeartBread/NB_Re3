@@ -9,8 +9,8 @@ import torch.optim as optim
 from torch.optim.lr_scheduler import StepLR
 from tqdm import tqdm, trange
 
-from qingke_data.data_loader_NB_Re3 import get_train_loader, get_test_loader
-from qingke_data import NB_Re3
+from data_loader_NB_Re3 import get_train_loader, get_test_loader
+from models import NB_Re3
 from support.utils import arr2raster, read_images, filelist_filter
 
 
